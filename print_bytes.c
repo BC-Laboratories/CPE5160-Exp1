@@ -5,7 +5,6 @@
 
 
 
-
 /***********************************************************************
 DESC:    Prints 8 bytes in Hexadecimal and then ASCII
 INPUT: Pointer to an array of eight bytes

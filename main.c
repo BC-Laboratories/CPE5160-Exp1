@@ -4,13 +4,13 @@
 #include "UART.h"
 #include "memory_test.h"
 #include "print_bytes.h"
-#include "AT89C51RC2.h"
+
 
 void main()
 {
-    UART_init();
+    UART_Init();
     while(1)
     {
-        putchar("F");
+        printf("F my life");
     }
 }

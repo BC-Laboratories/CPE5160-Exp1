@@ -16,6 +16,7 @@
 #ifndef _PORT_H
 #define _PORT_H
 
+#include "AT89C51RC2.h"
 
 // Port 0
 sbit P0_0 = P0^0;

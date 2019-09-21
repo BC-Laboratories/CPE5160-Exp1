@@ -4,6 +4,11 @@
 #include "main.h"
 #include "UART.h"
 
+#define space (0x20)
+#define CR (0x0D)
+#define LF (0x0A)
+#define BS (0x08)
+#define DEL (0x07F)
 
 
 // ------ Public function prototypes -------------------------------
