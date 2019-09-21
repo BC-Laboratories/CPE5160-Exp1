@@ -11,6 +11,6 @@ void main()
     UART_init();
     while(1)
     {
-
+        putchar("F");
     }
 }
