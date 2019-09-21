@@ -5,12 +5,17 @@
 #include "memory_test.h"
 #include "print_bytes.h"
 
-
 void main()
 {
+	uint8_t * generic_ptr;
+
+	generic_ptr = code_memory_init();
+
     UART_Init();
     while(1)
     {
-        printf("F my life");
+		//UART_Receive();
+        //UART_Transmit('F');
+
     }
 }

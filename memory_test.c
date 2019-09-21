@@ -1,7 +1,8 @@
 #include "main.h"
 #include "memory_test.h"
+#include <stdio.h>
 
-static uint8_t code code_mem[]="Code Memory: String for Roger Younger";
+static uint8_t code code_mem[]="Tyler Andrews, Brennan Campbell, Tyler Tetens";
 static uint8_t xdata xdata_mem[50];
 
 /***********************************************************************

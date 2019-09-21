@@ -5,10 +5,12 @@
 #ifndef UART_H
 #define UART_H
 
+#include "main.h"
 
 #define baudRate 9600
 #define SMOD1 0
 #define SPD 0
+
 
 void UART_Init();
 
