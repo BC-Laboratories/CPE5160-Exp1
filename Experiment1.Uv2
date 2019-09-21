@@ -5,13 +5,27 @@ Target (Target 1), 0x0000 // Tools: 'MCS-51'
 
 Group (Source Group 1)
 
+File 1,1,<.\UART.c><UART.c>
+File 1,1,<.\print_bytes.c><print_bytes.c>
+File 1,1,<.\memory_test.c><memory_test.c>
+File 1,1,<.\main.c><main.c>
+File 1,5,<.\memory_test.h><memory_test.h>
+File 1,5,<.\PORT.H><PORT.H>
+File 1,5,<.\print_bytes.h><print_bytes.h>
+File 1,5,<.\UART.h><UART.h>
+File 1,5,<.\Main.h><Main.h>
+File 1,5,<.\AT89C51RC2.h><AT89C51RC2.h>
+File 1,5,<.\hardware_delay_ms_T0.h><hardware_delay_ms_T0.h>
+File 1,1,<.\hardware_delay_ms_T0.c><hardware_delay_ms_T0.c>
+File 1,5,<.\LCD.H><LCD.H>
+File 1,1,<.\LCD.c><LCD.c>
 
 
 Options 1,0,0  // Target 'Target 1'
- Device (89C51)
+ Device (87F51RC)
  Vendor (Atmel)
- Cpu (IRAM(0 - 0x7F) IROM(0 - 0xFFF) CLOCK(24000000))
- Rgf (AT89X51.H)
+ Cpu (IRAM(0 - 0xFF) IROM(0 - 0xFFF) CLOCK(24000000))
+ Rgf (AT87F51RC.H)
  Mem ()
  C ()
  A ()
@@ -28,7 +42,7 @@ Options 1,0,0  // Target 'Target 1'
  OutName (Experiment1)
  GenApp=1
  GenLib=0
- GenHex=0
+ GenHex=1
  Debug=1
  Browse=0
  LstDir (.\)
@@ -42,12 +56,12 @@ Options 1,0,0  // Target 'Target 1'
  T51FL=80
  CBANKS5=0
  XBANKS5=0
- RCB51 { 0,0,0,0,0,0,0,0,0 }
+ RCB51 { 0,0,0,0,0,0,0,1,0 }
  RXB51 { 0,0,0,0,0,0,0,0,0 }
  OCM51 { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
  OCR51 { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
  IRO51 { 1,0,0,0,0,0,16,0,0 }
- IRA51 { 0,0,0,0,0,128,0,0,0 }
+ IRA51 { 0,0,0,0,0,0,1,0,0 }
  XRA51 { 0,0,0,0,0,0,0,0,0 }
  C51FL=21630224
  C51VA=0
@@ -93,7 +107,7 @@ Options 1,0,0  // Target 'Target 1'
  LX51BIS ()
  LX51DAS ()
  LX51IDS ()
-  OPTDL (S8051.DLL)()(DP51.DLL)(-p51)(S8051.DLL)()(TP51.DLL)(-p51)
+  OPTDL (S8051.DLL)()(DP51.DLL)(-p51R)(S8051.DLL)()(TP51.DLL)(-p51R)
   OPTDBG 509,0,()()()()()()()()()() ()()()()
 EndOpt
 
