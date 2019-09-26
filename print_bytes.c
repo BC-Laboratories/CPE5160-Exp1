@@ -1,3 +1,8 @@
+/*
+Experiment #1 - CpE5160
+Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
+*/
+
 #include <stdio.h>
 #include "main.h"
 #include "print_bytes.h"

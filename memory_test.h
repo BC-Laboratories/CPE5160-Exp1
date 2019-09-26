@@ -1,3 +1,8 @@
+/*
+Experiment #1 - CpE5160
+Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
+*/
+
 #ifndef _memory_test_H
 #define _memory_test_H
 

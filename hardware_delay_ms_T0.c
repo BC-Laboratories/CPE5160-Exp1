@@ -1,3 +1,7 @@
+/*
+Experiment #1 - CpE5160
+Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
+*/
 #include "Main.h"
 #include "PORT.H"
 #include "hardware_delay_ms_T0.h"

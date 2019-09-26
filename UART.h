@@ -1,6 +1,7 @@
-//
-// Created by User on 9/21/2019.
-//
+/*
+Experiment #1 - CpE5160
+Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
+*/
 
 #ifndef UART_H
 #define UART_H

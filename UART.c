@@ -1,3 +1,8 @@
+/*
+Experiment #1 - CpE5160
+Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
+*/
+
 #include "UART.h"
 #include "AT89C51RC2.h"
 

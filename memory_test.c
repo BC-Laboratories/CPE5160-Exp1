@@ -1,3 +1,8 @@
+/*
+Experiment #1 - CpE5160
+Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
+*/
+
 #include "main.h"
 #include "memory_test.h"
 #include <stdio.h>

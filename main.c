@@ -1,3 +1,7 @@
+/*
+Experiment #1 - CpE5160
+Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
+*/
 #include <stdio.h>
 #include "PORT.h"
 #include "Main.h"
