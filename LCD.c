@@ -8,7 +8,6 @@
 void LCD_Write(uint8_t RS_value, uint8_t value)
 {
 	RS = RS_value;
-
 	E = 1;
 	P0 = value;
 	E = 0;
@@ -16,6 +15,7 @@ void LCD_Write(uint8_t RS_value, uint8_t value)
 }
 
 void LCD_Module_Init(void){
+	//writes required commands with proper delays
 	hardware_delay_ms_T0(30);
 	LCD_Write(0x00, 0x38);
 	hardware_delay_ms_T0(5);

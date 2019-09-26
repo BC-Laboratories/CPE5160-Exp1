@@ -11,7 +11,7 @@ void UART_Init()
     //PCON
     PCON = 0x00;
 	ES = 0;
-    //SCON -
+    //SCON
     SCON |= 0x53;
     //BDRCON Clear
     BDRCON = 0x00;
@@ -25,10 +25,9 @@ uint8_t UART_Transmit(uint8_t send_value)
 {
 	while(!TI)
 	{
-	//Timeout needed.
-	//Will return error
+		
 	}
-
+	
 	SBUF = send_value;
 	TI = 0;
 	return send_value;
@@ -36,6 +35,7 @@ uint8_t UART_Transmit(uint8_t send_value)
 
 uint8_t UART_Receive(void)
 {
+	//variable to copy received byte into
 	uint8_t received_value;
 	while(!RI)
 	{

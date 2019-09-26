@@ -13,14 +13,17 @@ Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
 
 void main()
 {
+	//variables for testing LCD
 	uint8_t code Line_One[7]="Line 1";
 	uint8_t code Line_Two[7]="Line 2";
 	uint8_t index, value;
+	
+	//variables for testin UART
 	uint8_t * code_memory_ptr;
 	uint8_t * xdata_memory_ptr;
 
+	//initializes lcd
 	LCD_Module_Init();
-
 	LCD_Write(0,0x80);
 	hardware_delay_ms_T0(1);
 	index = 0;
@@ -33,7 +36,6 @@ void main()
 		value = Line_One[index];
 	}
 	LCD_Write(0x00,0xC0);
-
 	
 	LCD_Write(0,0x80);
 	hardware_delay_ms_T0(1);
@@ -46,12 +48,8 @@ void main()
 		index++;
 		value = Line_Two[index];
 	}
-	//LCD_Write(0x00,0xC0);
+	LCD_Write(0x00,0xC0);
 	
-
-
-	
-
 	UART_Init();
 
 	code_memory_ptr = code_memory_init();
@@ -60,10 +58,12 @@ void main()
 	print_memory(code_memory_ptr, 41);
 	print_memory(xdata_memory_ptr, 42);
 
+	/* Below is for testing UART
     while(1)
     {
-		//UART_Receive();
-        //UART_Transmit('F');
+		UART_Receive();
+        UART_Transmit('F');
 
     }
+	*/
 }

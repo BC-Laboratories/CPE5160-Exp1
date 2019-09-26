@@ -12,6 +12,7 @@ void hardware_delay_ms_T0(uint16_t num_ms){
 	TMOD &= 0xF0;
 	TMOD |= 0x01;
 	ET0=0;
+	//runs a timer controlled delay per millisecond
 	for(index = 0; index<num_ms; index++){
 		TH0 = PRELOAD_H;
 		TL0 = PRELOAD_L;

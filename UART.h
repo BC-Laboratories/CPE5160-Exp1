@@ -12,12 +12,10 @@ Team Members: Tyler Andrews, Brennan Campbell, Tyler Tetens
 #define SMOD1 0
 #define SPD 0
 
-
 void UART_Init();
 
 uint8_t UART_Transmit(uint8_t send_value);
 
 uint8_t UART_Receive(void);
-
 
 #endif
